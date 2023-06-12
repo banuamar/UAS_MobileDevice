@@ -78,7 +78,7 @@ public class MenuUtama extends AppCompatActivity implements SensorEventListener 
         }
     }
     public void keMap(){
-        Intent maps = new Intent(MenuUtama.this, MapActivity.class);
+        Intent maps = new Intent(MenuUtama.this, MappActivity.class);
         startActivity(maps);
     }
     @Override
