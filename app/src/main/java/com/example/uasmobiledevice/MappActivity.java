@@ -35,7 +35,7 @@ public class MappActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapp);
 
-        suportMapFragment=(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.google_map);
+        suportMapFragment=(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         fusedLocationProviderClient=(FusedLocationProviderClient) LocationServices.getFusedLocationProviderClient(this);
         Dexter.withContext(getApplicationContext()).withPermission(android.Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
