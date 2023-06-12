@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 public class MenuUtama extends AppCompatActivity {
     Button btnOK;
+    Spinner pilihanMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,18 +25,23 @@ public class MenuUtama extends AppCompatActivity {
             @Override
             public void onClick(View view) {okDiklik();}
         });
-        Spinner Menu = (Spinner)findViewById(R.id.pilihanMenu);
-//Daftar isian spninner yang tampil
-        String[] pilihanMenu = {
-                "Jelajahi", "Hubungi", "Baca Data", "Cek Posisi" };
-//Mengubah arr mj ArrAdapter
-        ArrayAdapter<String> arrayAdapterMenu = new ArrayAdapter<>(
-                this, android.R.layout.simple_spinner_item, pilihanMenu);
-//Memasukkan ArrAdapater ke spinner
-        Menu.setAdapter(arrayAdapterMenu);
+        pilihanMenu = (Spinner) findViewById(R.id.pilihanMenu);
+
     }
     public void okDiklik() {
-
+        String menuyangdipilih = pilihanMenu.getSelectedItem().toString();
+        if (menuyangdipilih .equals("Jelajahi")) {
+            Toast.makeText(this.getBaseContext(),"Jelajahi", Toast.LENGTH_LONG).show();
+            return;
+        }else if (menuyangdipilih .equals("Hubungi")){
+            Toast.makeText(this.getBaseContext(),"Hubungi", Toast.LENGTH_LONG).show();
+            return;
+        }else if (menuyangdipilih .equals("Baca Data")){
+            Toast.makeText(this.getBaseContext(),"Baca Data", Toast.LENGTH_LONG).show();
+            return;
+        }else if (menuyangdipilih .equals("Cek Lokasi")){
+            Toast.makeText(this.getBaseContext(),"Cek Lokasi", Toast.LENGTH_LONG).show();
+            return;
         }
     }
 }

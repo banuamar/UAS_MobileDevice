@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">UAS mobile device</string>
+    <string-array name="menu">
+        <item>Jelajahi</item>
+        <item>Hubungi</item>
+        <item>Baca Data</item>
+        <item>Cek Posisi</item>
+    </string-array>
 </resources>
