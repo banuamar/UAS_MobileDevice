@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void MasukLoginOnClick() {
-        Intent nextpage = new Intent(this, MainActivity.class);
+        Intent nextpage = new Intent(this, MenuUtama.class);
         startActivity(nextpage);
 
     }
