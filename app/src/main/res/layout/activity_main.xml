@@ -64,7 +64,7 @@
             android:text="Nama  :"
             />
         <TextView
-            android:id="@+id/latitude"
+            android:id="@+id/banu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -80,7 +80,7 @@
             android:textColor="@color/black"
             android:text="NIM     :" />
         <TextView
-            android:id="@+id/latitude"
+            android:id="@+id/nim1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

@@ -79,43 +79,5 @@
             android:layout_alignParentEnd="true"
             android:text="..." />
     </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/ketinggian"
-        android:layout_below="@+id/bujur"
-        android:background="#375E97"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Ketinggian" />
-        <TextView
-            android:id="@+id/altitude"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_alignParentEnd="true"
-            android:text="..." />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/akurasi"
-        android:layout_below="@+id/ketinggian"
-        android:background="#375E97"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Akurasi" />
-        <TextView
-            android:id="@+id/akurasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:layout_alignParentEnd="true"
-            android:text="..." />
-    </RelativeLayout>
 
 </RelativeLayout>

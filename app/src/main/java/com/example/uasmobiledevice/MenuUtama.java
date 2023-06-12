@@ -38,8 +38,6 @@ public class MenuUtama extends AppCompatActivity implements SensorEventListener 
     Spinner pilihanMenu;
     private SensorManager mSensorManager = null;
     private Sensor mLightSensor = null;
-    private TextView latitude, longitude, altitude, akurasi;
-    private FusedLocationProviderClient locationProviderClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,15 +67,19 @@ public class MenuUtama extends AppCompatActivity implements SensorEventListener 
             Uri.parse("smsto:082250493611");
             pesan.putExtra("sms_body", "Pesan dari aplikasi android");
             startActivity(pesan);
+            Toast.makeText(this.getBaseContext(),"Akan megnirim pesan", Toast.LENGTH_LONG).show();
             return;
         }else if (menuyangdipilih .equals("Baca Data")){
             String kecerahan = mLightSensor.toString();
             Toast.makeText(this.getBaseContext(),"Baca Data"+ kecerahan, Toast.LENGTH_LONG).show();
             return;
-        }else if (menuyangdipilih .equals("Cek Lokasi")){
-            Toast.makeText(this.getBaseContext(),"Mengcek Lokasi....", Toast.LENGTH_LONG).show();
-            return;
+        }else if (menuyangdipilih .equals("Cek Posisi")){
+            keMap();
         }
+    }
+    public void keMap(){
+        Intent maps = new Intent(MenuUtama.this, MapActivity.class);
+        startActivity(maps);
     }
     @Override
     protected void onResume() {
